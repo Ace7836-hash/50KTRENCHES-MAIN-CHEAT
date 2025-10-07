@@ -6,49 +6,7 @@ Icon = nil,
 LoadingTitle = "1KMISTRAL MAIN CHEAT...",
 LoadingSubtitle = "LOADER ROI...",
 ShowText = "1K UI",
-
-Theme = {
-TextColor = Color3.fromRGB(235, 235, 235),
-
-Background = Color3.fromRGB(15, 15, 18),  
-  Topbar = Color3.fromRGB(20, 20, 25),  
-  Shadow = Color3.fromRGB(8, 8, 10),  
-
-  NotificationBackground = Color3.fromRGB(25, 25, 30),  
-  NotificationActionsBackground = Color3.fromRGB(35, 35, 40),  
-
-  TabBackground = Color3.fromRGB(28, 28, 32),  
-  TabStroke = Color3.fromRGB(50, 50, 60),  
-  TabBackgroundSelected = Color3.fromRGB(60, 60, 60),  
-  TabTextColor = Color3.fromRGB(200, 200, 200),  
-  SelectedTabTextColor = Color3.fromRGB(255, 255, 255),  
-
-  ElementBackground = Color3.fromRGB(25, 25, 30),  
-  ElementBackgroundHover = Color3.fromRGB(35, 35, 45),  
-  SecondaryElementBackground = Color3.fromRGB(20, 20, 25),  
-  ElementStroke = Color3.fromRGB(40, 40, 50),  
-  SecondaryElementStroke = Color3.fromRGB(30, 30, 35),  
-       
-  SliderBackground = Color3.fromRGB(0, 90, 160),  
-  SliderProgress = Color3.fromRGB(0, 162, 255),  
-  SliderStroke = Color3.fromRGB(0, 200, 255),  
-
-  ToggleBackground = Color3.fromRGB(30, 30, 35),  
-  ToggleEnabled = Color3.fromRGB(0, 162, 255),  
-  ToggleDisabled = Color3.fromRGB(80, 80, 80),  
-  ToggleEnabledStroke = Color3.fromRGB(0, 200, 255),  
-  ToggleDisabledStroke = Color3.fromRGB(65, 65, 65),  
-  ToggleEnabledOuterStroke = Color3.fromRGB(100, 200, 255),  
-  ToggleDisabledOuterStroke = Color3.fromRGB(45, 45, 45),  
-
-  DropdownSelected = Color3.fromRGB(35, 35, 40),  
-  DropdownUnselected = Color3.fromRGB(25, 25, 30),  
-
-  InputBackground = Color3.fromRGB(25, 25, 30),  
-  InputStroke = Color3.fromRGB(65, 65, 70),  
-  PlaceholderColor = Color3.fromRGB(160, 160, 160)
-
-},
+Theme = "Dark"
 
 ToggleUIKeybind = "K",
 DisableRayfieldPrompts = true,
