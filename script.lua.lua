@@ -1,38 +1,38 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
- 
+
 local Window = Rayfield:CreateWindow({
 Name = "1KMISTRAL MAIN CHEAT",
 Icon = nil,
 LoadingTitle = "1KMISTRAL MAIN CHEAT...",
-LoadingSubtitle = "LOADER ROI...",
+LoadingSubtitle = "LOADER ACE...",
 ShowText = "1KMISTRAL UI",
- 
+
 Theme = {
 TextColor = Color3.fromRGB(235, 235, 235),
- 
+
 Background = Color3.fromRGB(15, 15, 18),  
   Topbar = Color3.fromRGB(20, 20, 25),  
   Shadow = Color3.fromRGB(8, 8, 10),  
- 
+
   NotificationBackground = Color3.fromRGB(25, 25, 30),  
   NotificationActionsBackground = Color3.fromRGB(35, 35, 40),  
- 
+
   TabBackground = Color3.fromRGB(28, 28, 32),  
   TabStroke = Color3.fromRGB(50, 50, 60),  
   TabBackgroundSelected = Color3.fromRGB(60, 60, 60),  
   TabTextColor = Color3.fromRGB(200, 200, 200),  
   SelectedTabTextColor = Color3.fromRGB(255, 255, 255),  
- 
+
   ElementBackground = Color3.fromRGB(25, 25, 30),  
   ElementBackgroundHover = Color3.fromRGB(35, 35, 45),  
   SecondaryElementBackground = Color3.fromRGB(20, 20, 25),  
   ElementStroke = Color3.fromRGB(40, 40, 50),  
   SecondaryElementStroke = Color3.fromRGB(30, 30, 35),  
- 
+       
   SliderBackground = Color3.fromRGB(0, 90, 160),  
   SliderProgress = Color3.fromRGB(0, 162, 255),  
   SliderStroke = Color3.fromRGB(0, 200, 255),  
- 
+
   ToggleBackground = Color3.fromRGB(30, 30, 35),  
   ToggleEnabled = Color3.fromRGB(0, 162, 255),  
   ToggleDisabled = Color3.fromRGB(80, 80, 80),  
@@ -40,32 +40,32 @@ Background = Color3.fromRGB(15, 15, 18),
   ToggleDisabledStroke = Color3.fromRGB(65, 65, 65),  
   ToggleEnabledOuterStroke = Color3.fromRGB(100, 200, 255),  
   ToggleDisabledOuterStroke = Color3.fromRGB(45, 45, 45),  
- 
+
   DropdownSelected = Color3.fromRGB(35, 35, 40),  
   DropdownUnselected = Color3.fromRGB(25, 25, 30),  
- 
+
   InputBackground = Color3.fromRGB(25, 25, 30),  
   InputStroke = Color3.fromRGB(65, 65, 70),  
   PlaceholderColor = Color3.fromRGB(160, 160, 160)
- 
+
 },
- 
+
 ToggleUIKeybind = "K",
 DisableRayfieldPrompts = true,
 DisableBuildWarnings = true,
- 
+
 ConfigurationSaving = {
 Enabled = true,
 FolderName = nil,
 FileName = "SYNDICATE-MAIN"
 },
- 
+
 Discord = {
 Enabled = true,
 Invite = "vNm3fwxpX",
 RememberJoins = true
 },
- 
+
 KeySystem = false,
 KeySettings = {
 Title = "LUHOD SA GODZ!!",
@@ -77,98 +77,160 @@ GrabKeyFromSite = false,
 Key = "1KMI$TRAL-MAINCHEAT"
 }
 })
-
-local MAINTab = Window:CreateTab("ROLEPLAY SCRIPT", "Rewind")
-local MAINSection = MAINTab:CreateSection("1KMISTRAL FEATURE")
+local MAINTab = Window:CreateTab("MAIN SCRIPT", "Rewind")
+local MAINSection = MAINTab:CreateSection("SYNDICATE")
 
 Rayfield:Notify({
-   Title = "You executed the script",
-   Content = "",
-   Duration = 5,
-   Image = 13047715178,
-   Actions = { -- Notification Buttons
-      Ignore = {
-         Name = "Okay!",
-         Callback = function()
-         print("!!THE SCRIPTS EXECUTED!!")
-      end
-   },
-},
+Title = "ROI",
+Content = "INVITE DISCORD LINK https://discord.gg/vNm3fwxpX",
+Duration = 2.5,
+Image = nil,
 })
 
 local Button = MAINTab:CreateButton({
-   Name = "INFINITE YIELD [1KMI$TRAL]",
-   Callback = function()
-       loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-   end
+Name = "INFINITE YIELD [1KMISTRAL]",
+Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end
 })
 
 local Button = MAINTab:CreateButton({
-   Name = "MUSIC EXPO [1KMI$TRAL]",
-   Callback = function()
+Name = "MUSIC EXPO [1KMISTRAL]",
+Callback = function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-Ac6-Music-Vulnerability-25536"))()
-   end,
+end,
 })
 
-
 local Button = MAINTab:CreateButton({
-   Name = "BIG HEAD [1KMI$TRAL]",
-   Callback = function()
+Name = "BIG HEAD [1KMISTRAL]",
+Callback = function()
 _G.HeadSize = 4 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.Head.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize) v.Character.Head.Transparency = 0.4 v.Character.Head.BrickColor = BrickColor.new("Red") v.Character.Head.Material = "Neon" v.Character.Head.CanCollide = false v.Character.Head.Massless = true end) end end end end)
- end,
+end,
 })
 
 local Button = MAINTab:CreateButton({
-   Name = "FADED MENU [1KMI$TRAL]",
-   Callback = function()
+Name = "FADED MENU [1KMISTRAL]",
+Callback = function()
 _G.Toggles = "Y" -- You can put any keybind
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded-Grid/main/YesEpic", true))()
-   end,
+end,
 })
 
 local Button = MAINTab:CreateButton({
-   Name = "BRING PARTS [1KMI$TRAL]",
-   Callback = function()
+Name = "BRING PARTS [1KMISTRAL]",
+Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/BringFlingPlayers"))("More Scripts: t.me/arceusxscripts")
-   end,
+end,
 })
 
 local Button = MAINTab:CreateButton({
-   Name = "TOUCH FLING [1KMI$TRAL]",
-   Callback = function()
+Name = "TOUCH FLING [1KMISTRAL]",
+Callback = function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Touch-Fling-46156"))()
-   end,
+end,
 })
 
-
 local Button = MAINTab:CreateButton({
-   Name = "HITBOX EXPANDER [1KMI$TRAL]",
-   Callback = function()
+Name = "HITBOX EXPANDER [1KMISTRAL]",
+Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ezsee/Hitbox-Expander123/refs/heads/main/waaaaaat"))()
-   end,
+end,
 })
-
 
 local Button = MAINTab:CreateButton({
-   Name = "FLING ALL [1KMI$TRAL]",
-   Callback = function()
+Name = "FLING ALL [1KMISTRAL]",
+Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
-   end,
+end,
 })
 
-local Button = TROLLTab:CreateButton({
-   Name = "WICKED [1KMI$TRAL]",
-   Callback = function()
+local Button = MAINTab:CreateButton({
+    Name = "ESP [1KMISTRAL]",
+    Callback = function()
+      -- ====== SERVICES ======
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local LocalPlayer = Players.LocalPlayer
+local Camera = workspace.CurrentCamera
+
+-- ====== SETTINGS ======
+local espColor = Color3.fromRGB(0, 255, 0) -- green
+local boxThickness = 2
+local nameSize = 18
+local boxPadding = 5
+
+-- ====== FUNCTIONS ======
+local function createESP(player)
+    if player == LocalPlayer then return end
+
+    local character = player.Character or player.CharacterAdded:Wait()
+    local hrp = character:WaitForChild("HumanoidRootPart")
+
+    local box = Drawing.new("Square")
+    box.Visible = true
+    box.Color = espColor
+    box.Thickness = boxThickness
+    box.Filled = false
+
+    local nameLabel = Drawing.new("Text")
+    nameLabel.Visible = true
+    nameLabel.Color = espColor
+    nameLabel.Center = true
+    nameLabel.Size = nameSize
+    nameLabel.Font = 2
+    nameLabel.Text = player.Name
+
+    RunService.RenderStepped:Connect(function()
+        if character and hrp then
+            local pos, onScreen = Camera:WorldToViewportPoint(hrp.Position)
+            if onScreen then
+                local size = Vector2.new(50, 50)
+                box.Position = Vector2.new(pos.X - size.X/2, pos.Y - size.Y/2)
+                box.Size = size
+                box.Visible = true
+
+                nameLabel.Position = Vector2.new(pos.X, pos.Y - size.Y/2 - 15)
+                nameLabel.Visible = true
+            else
+                box.Visible = false
+                nameLabel.Visible = false
+            end
+        else
+            box.Visible = false
+            nameLabel.Visible = false
+        end
+    end)
+end
+
+-- ====== APPLY ESP ======
+for _, player in pairs(Players:GetPlayers()) do
+    createESP(player)
+    player.CharacterAdded:Connect(function()
+        createESP(player)
+    end)
+end
+
+Players.PlayerAdded:Connect(function(player)
+    player.CharacterAdded:Connect(function()
+        createESP(player)
+    end)
+end)  
+    end,
+})
+
+local Button = MAINTab:CreateButton({
+Name = "WICKED [SYNDICATE]",
+Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/GY1wfJRZ"))()
-   end,
+end,
 })
 
-local SPAWNGUNTab = Window:CreateTab("1KMISTRAL DUPE CHEAT", "package")
+local SPAWNGUNTab = Window:CreateTab("1KMISTRAL DUPE CHEAT", "Package")
 local SPAWNGUNSection = SPAWNGUNTab:CreateSection("SPAWN GUN")
 
 -- Rayfield button
 SPAWNGUNTab:CreateButton({
-Name = "GUN SHOP [SYNDICATE]",
+Name = "GUN SHOP [1KMISTRAL]",
 Callback = function()
 -- Gumawa ng Frame (rectangle container)
 local ScreenGui = Instance.new("ScreenGui")
@@ -229,7 +291,7 @@ AmountInput.Parent = Frame
 local SpawnButton = Instance.new("TextButton")
 SpawnButton.Size = UDim2.new(1, -20, 0, 35)
 SpawnButton.Position = UDim2.new(0, 10, 0, 130)
-SpawnButton.Text = "Purchased"
+SpawnButton.Text = "Spawn Gun"
 SpawnButton.Font = Enum.Font.GothamBold
 SpawnButton.TextSize = 16
 SpawnButton.TextColor3 = Color3.fromRGB(255,255,255)
@@ -251,93 +313,174 @@ end)
    end,
 })
 
-local Button = MAINTab:CreateButton({
-   Name = "ESP [1KMI$TRAL]",
-   Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/4iVTcMZK"))()
-   end,
-})
-
 -- FPS Booster Button (Rayfield example)
 
 local Button = MAINTab:CreateButton({
-   Name = "BOOST FPS [1KMI$TRAL]",
-   Callback = function()
-       _G.Ignore = {}
+Name = "BOOST FPS [1KMISTRAL]",
+Callback = function()
+_G.Ignore = {}
 _G.Settings = {
-    Players = {
-        ["Ignore Me"] = true,
-        ["Ignore Others"] = true,
-        ["Ignore Tools"] = true
-    },
-    Meshes = {
-        NoMesh = false,
-        NoTexture = false,
-        Destroy = false
-    },
-    Images = {
-        Invisible = true,
-        Destroy = false
-    },
-    Explosions = {
-        Smaller = true,
-        Invisible = false, -- Not for PVP games
-        Destroy = false -- Not for PVP games
-    },
-    Particles = {
-        Invisible = true,
-        Destroy = false
-    },
-    TextLabels = {
-        LowerQuality = true,
-        Invisible = false,
-        Destroy = false
-    },
-    MeshParts = {
-        LowerQuality = true,
-        Invisible = false,
-        NoTexture = false,
-        NoMesh = false,
-        Destroy = false
-    },
-    Other = {
-        ["FPS Cap"] = 240, -- true to uncap
-        ["No Camera Effects"] = true,
-        ["No Clothes"] = true,
-        ["Low Water Graphics"] = true,
-        ["No Shadows"] = true,
-        ["Low Rendering"] = true,    
-        ["Low Quality Parts"] = true,
-        ["Low Quality Models"] = true,
-        ["Reset Materials"] = true,
-    }
+Players = {
+["Ignore Me"] = true,
+["Ignore Others"] = true,
+["Ignore Tools"] = true
+},
+Meshes = {
+NoMesh = false,
+NoTexture = false,
+Destroy = false
+},
+Images = {
+Invisible = true,
+Destroy = false
+},
+Explosions = {
+Smaller = true,
+Invisible = false, -- Not for PVP games
+Destroy = false -- Not for PVP games
+},
+Particles = {
+Invisible = true,
+Destroy = false
+},
+TextLabels = {
+LowerQuality = true,
+Invisible = false,
+Destroy = false
+},
+MeshParts = {
+LowerQuality = true,
+Invisible = false,
+NoTexture = false,
+NoMesh = false,
+Destroy = false
+},
+Other = {
+["FPS Cap"] = 240, -- true to uncap
+["No Camera Effects"] = true,
+["No Clothes"] = true,
+["Low Water Graphics"] = true,
+["No Shadows"] = true,
+["Low Rendering"] = true,
+["Low Quality Parts"] = true,
+["Low Quality Models"] = true,
+["Reset Materials"] = true,
+}
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
-   end
+end
 })
 
 local Button = MAINTab:CreateButton({
-   Name = "DEX EXPLORER [1KMI$TRAL]",
-   Callback = function()
+Name = "DEX EXPLORER [1KMISTRAL]",
+Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MassiveHubs/loadstring/refs/heads/main/DexXenoAndRezware'))()
-   end
+end
 })
 
---// =============== FANTASMA TAB ===============
-local FANTab = Window:CreateTab("1KMISTRAL FANTASMA CHEAT", "settings")
-local FANSection = FANTab:CreateSection("FANTASMA AIMBOT")
-
-local Button = FANTab:CreateButton({
-   Name = "AIMBOT PC [1KMI$TRAL]",
-   Callback = function()
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/usbkillerx/EZhacker/refs/heads/main/EZhack"))()
-   end
+local Button = MAINTab:CreateButton({
+Name = "AIMBOT PC [1KMISTRAL]",
+Callback = function()
+local Aimbot = loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V3/main/src/Aimbot.lua"))()
+Aimbot.Load()
+end
 })
 
-local Button = FANTab:CreateButton({
-   Name = "AIMBOT EXUNYS [1KMI$TRAL]",
-   Callback = function()
-       local Aimbot = loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V3/main/src/Aimbot.lua"))()
-       Aimbot.Load()
-   end
+local Button = MAINTab:CreateButton({
+Name = "LOOPBRING ALL [NOT MENU] [1KMISTRAL]",
+Callback = function()
+local L1 = true;
+local L2 = game.Players.LocalPlayer.Character.HumanoidRootPart;
+local L3 = L2.Position - Vector3.new(5, 0, 0)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(L_4_arg1)
+    if L_4_arg1 == 'f' then
+        L1 = not L1
+    end;
+    if L_4_arg1 == 'r' then
+        L2 = game.Players.LocalPlayer.Character.HumanoidRootPart;
+        L3 = L2.Position - Vector3.new(5, 0, 0)
+    end
+end)
+
+for L_5_forvar1, L_6_forvar2 in pairs(game.Players:GetPlayers()) do
+    if L_6_forvar2 == game.Players.LocalPlayer then
+    else
+        local L7 = coroutine.create(function()
+            game:GetService('RunService').RenderStepped:Connect(function()
+                local L8, L9 = pcall(function()
+                    local L10 = L_6_forvar2.Character;
+                    if L10 then
+                        if L10:FindFirstChild("HumanoidRootPart") then
+                            if L1 then
+                                L_6_forvar2.Backpack:ClearAllChildren()
+                                for L_11_forvar1, L_12_forvar2 in pairs(L10:GetChildren()) do
+                                    if L_12_forvar2:IsA("Tool") then
+                                        L_12_forvar2:Destroy()
+                                    end
+                                end;
+                                L10.HumanoidRootPart.CFrame = CFrame.new(L3)
+                            end
+                        end
+                    end
+                end)
+                if L8 then
+                else
+                    warn("Unnormal error: "..L9)
+                end
+            end)
+        end)
+        coroutine.resume(L7)
+    end
+end;
+-- check for updates
+game.Players.PlayerAdded:Connect(function(L_13_arg1)
+    if L_13_arg1 == game.Players.LocalPlayer then
+    else
+        local L14 = coroutine.create(function()
+            game:GetService('RunService').RenderStepped:Connect(function()
+                local L15, L16 = pcall(function()
+                    local L17 = L_13_arg1.Character;
+                    if L17 then
+                        if L17:FindFirstChild("HumanoidRootPart") then
+                            if L1 then
+                                L_13_arg1.Backpack:ClearAllChildren()
+                                for L_18_forvar1, L_19_forvar2 in pairs(L17:GetChildren()) do
+                                    if L_19_forvar2:IsA("Tool") then
+                                        L_19_forvar2:Destroy()
+                                    end
+                                end;
+                                L17.HumanoidRootPart.CFrame = CFrame.new(L3)
+                            end
+                        end
+                    end
+                end)
+                if L15 then
+                else
+                    warn("Unnormal error: "..L16)
+                end
+            end)
+        end)
+        coroutine.resume(L14)
+    end
+end)
+end
+})
+
+
+local Button = MAINTab:CreateButton({
+Name = "REMOTE SPY [1KMISTRAL]",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
+end
+})
+
+local ACETab = Window:CreateTab("1KMISTRAL EXECUTOR", "Settings")
+local ACESection = ACETab:CreateSection("1KMISTRAL EXECUTE")
+
+local Button =  ACETab:CreateButton({
+Name = "1KMISTRAL EXECUTOR[1KMISTRAL]",
+Callback = function()
+
+end
 })
