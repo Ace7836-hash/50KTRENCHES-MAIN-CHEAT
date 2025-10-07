@@ -96,7 +96,6 @@ Rayfield:Notify({
 },
 })
 
-
 local Button = MAINTab:CreateButton({
    Name = "INFINITE YIELD [1KMI$TRAL]",
    Callback = function()
@@ -133,9 +132,6 @@ local Button = MAINTab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/BringFlingPlayers"))("More Scripts: t.me/arceusxscripts")
    end,
 })
-
-
-
 
 local Button = MAINTab:CreateButton({
    Name = "TOUCH FLING [1KMI$TRAL]",
@@ -327,18 +323,21 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/MassiveHubs/loadstrin
    end
 })
 
+--// =============== FANTASMA TAB ===============
 local FANTab = Window:CreateTab("1KMISTRAL FANTASMA CHEAT", "settings")
 local FANSection = FANTab:CreateSection("FANTASMA AIMBOT")
 
 local Button = FANTab:CreateButton({
    Name = "AIMBOT PC [1KMI$TRAL]",
    Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/usbkillerx/EZhacker/refs/heads/main/EZhack"))()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/usbkillerx/EZhacker/refs/heads/main/EZhack"))()
    end
-})local Button = MAINTab:CreateButton({
-   Name = "AIMBOT PC [1KMI$TRAL]",
+})
+
+local Button = FANTab:CreateButton({
+   Name = "AIMBOT EXUNYS [1KMI$TRAL]",
    Callback = function()
-local Aimbot = loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V3/main/src/Aimbot.lua"))()
-Aimbot.Load()
+       local Aimbot = loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V3/main/src/Aimbot.lua"))()
+       Aimbot.Load()
    end
 })
