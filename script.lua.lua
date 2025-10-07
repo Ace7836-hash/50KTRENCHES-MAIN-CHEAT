@@ -167,7 +167,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/GY1wfJRZ"))()
    end,
 })
 
-local SPAWNGUNTab = Window:CreateTab("1KMISTRAL DUPE CHEAT", "Package")
+local SPAWNGUNTab = Window:CreateTab("1KMISTRAL DUPE CHEAT", "package")
 local SPAWNGUNSection = SPAWNGUNTab:CreateSection("SPAWN GUN")
 
 -- Rayfield button
