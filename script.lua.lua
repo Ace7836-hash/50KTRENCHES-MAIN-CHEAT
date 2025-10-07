@@ -78,8 +78,8 @@ Background = Color3.fromRGB(15, 15, 18),
    }
 })
 
-local MAINTab = Window:CreateTab("ROLEPLAY SCRIPTS", 4483362458) -- Title, Image
-local MAINSection = MAINTab:CreateSection("MAIN CHEAT")
+local MAINTab = Window:CreateTab("ROLEPLAY SCRIPT", "Rewind")
+local MAINSection = MAINTab:CreateSection("1KMISTRAL FEATURE")
 
 Rayfield:Notify({
    Title = "You executed the script",
@@ -152,10 +152,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ezsee/Hitbox-Expander
    end,
 })
 
-local TROLLTab = Window:CreateTab("TROLL", 4483362458) -- Title, Image
-local TROLLSection = TROLLTab:CreateSection("TROLL")
 
-local Button = TROLLTab:CreateButton({
+local Button = MAINTab:CreateButton({
    Name = "FLING ALL [1KMI$TRAL]",
    Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
@@ -169,76 +167,91 @@ loadstring(game:HttpGet("https://pastebin.com/raw/GY1wfJRZ"))()
    end,
 })
 
-local SPAWNGUNTab = Window:CreateTab("🔫SPAWN GUN 1KMI$TRA🔫", 4483362458) -- Title, Image
+local SPAWNGUNTab = Window:CreateTab("1KMISTRAL DUPE CHEAT", "Package")
 local SPAWNGUNSection = SPAWNGUNTab:CreateSection("SPAWN GUN")
 
 -- Rayfield button
 SPAWNGUNTab:CreateButton({
-    Name = "ALL CITY HK416 [1KMI$TRAL]",
-    Callback = function()
-        local args = {
-    [1] = "HK416",
-    [2] = -1000000
-}
+Name = "GUN SHOP [SYNDICATE]",
+Callback = function()
+-- Gumawa ng Frame (rectangle container)
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "GunSpawnerUI"
+ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
 
-game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("HK416", -10000)
-   end,
-})
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(0, 250, 0, 180)
+Frame.Position = UDim2.new(0.5, -125, 0.5, -90) -- nasa gitna
+Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Frame.BorderSizePixel = 0
+Frame.Active = true
+Frame.Draggable = true
+Frame.Parent = ScreenGui
 
--- Rayfield button
-SPAWNGUNTab:CreateButton({
-    Name = "ALL CITY SP [1KMI$TRAL]",
-    Callback = function()
-local args = {
-    [1] = "Silenced Pistol",
-    [2] = -1000000
-}
+-- UI Corner (rounded rectangle)
+local UICorner = Instance.new("UICorner")
+UICorner.CornerRadius = UDim.new(0, 8)
+UICorner.Parent = Frame
 
-game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("Silenced Pistol", -10000)
-   end,
-})
+-- UI Stroke (outline)
+local UIStroke = Instance.new("UIStroke")
+UIStroke.Thickness = 2
+UIStroke.Color = Color3.fromRGB(50, 138, 220)
+UIStroke.Parent = Frame
 
--- Rayfield button
-SPAWNGUNTab:CreateButton({
-    Name = "ALL CITY MEDKIT [1KMI$TRAL]",
-    Callback = function()
-   local args = {
-    [1] = "MEDKIT",
-    [2] = -1000000
-}
+-- Title
+local Title = Instance.new("TextLabel")
+Title.Size = UDim2.new(1, 0, 0, 30)
+Title.BackgroundTransparency = 1
+Title.Text = "GUN SHOP [1KMISTRAL]"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 18
+Title.TextColor3 = Color3.fromRGB(240,240,240)
+Title.Parent = Frame
 
-game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("MEDKIT", -10000)
-   end,
-})
+-- Input: Gun Name
+local GunInput = Instance.new("TextBox")
+GunInput.Size = UDim2.new(1, -20, 0, 30)
+GunInput.Position = UDim2.new(0, 10, 0, 40)
+GunInput.PlaceholderText = "Enter Gun Name"
+GunInput.Text = ""
+GunInput.TextColor3 = Color3.fromRGB(240,240,240)
+GunInput.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+GunInput.Parent = Frame
 
-SPAWNGUNTab:CreateButton({
-    Name = "ALL CITY Desert Eagle [1KMI$TRAL]",
-    Callback = function() game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("Desert Deagle", -10000)
-    end,
-})
--- Rayfield button
-SPAWNGUNTab:CreateButton({
-    Name = "ALL CITY Glock-17 [1KMI$TRAL]",
-    Callback = function()
-        local args = {
-    [1] = "Glock-17",
-    [2] = -1000000
-}
+-- Input: Amount
+local AmountInput = Instance.new("TextBox")
+AmountInput.Size = UDim2.new(1, -20, 0, 30)
+AmountInput.Position = UDim2.new(0, 10, 0, 80)
+AmountInput.PlaceholderText = "Enter Amount"
+AmountInput.Text = ""
+AmountInput.TextColor3 = Color3.fromRGB(240,240,240)
+AmountInput.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+AmountInput.Parent = Frame
 
-game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("Glock-17", -10000)
-   end,
- })
+-- Button: Spawn Gun
+local SpawnButton = Instance.new("TextButton")
+SpawnButton.Size = UDim2.new(1, -20, 0, 35)
+SpawnButton.Position = UDim2.new(0, 10, 0, 130)
+SpawnButton.Text = "Purchased"
+SpawnButton.Font = Enum.Font.GothamBold
+SpawnButton.TextSize = 16
+SpawnButton.TextColor3 = Color3.fromRGB(255,255,255)
+SpawnButton.BackgroundColor3 = Color3.fromRGB(50, 138, 220)
+SpawnButton.Parent = Frame
 
--- Rayfield button
-SPAWNGUNTab:CreateButton({
-    Name = "ALL CITY Glock-19 [1KMI$TRAL]",
-    Callback = function()
-        local args = {
-    [1] = "Glock-19",
-    [2] = -1000000
-}
-
-game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("Glock-19", -10000)
+-- Spawn Function
+SpawnButton.MouseButton1Click:Connect(function()
+    local gunName = GunInput.Text
+    local amount = tonumber(AmountInput.Text) or 0
+    if gunName ~= "" and amount ~= 0 then
+        local ReplicatedStorage = game:GetService("ReplicatedStorage")
+        local GunShop = ReplicatedStorage:FindFirstChild("GunShop")
+        if GunShop and GunShop:FindFirstChild("Events") and GunShop.Events:FindFirstChild("Purchase") then
+            GunShop.Events.Purchase:FireServer(gunName, amount)
+        end
+    end
+end)
    end,
 })
 
@@ -307,32 +320,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord
    end
 })
 
--- Rayfield button
-SPAWNGUNTab:CreateButton({
-    Name = "ALL CITY AK-47 [1KMI$TRAL]",
-    Callback = function()
-        local args = {
-    [1] = "AK-47",
-    [2] = -1000000
-}
-
-game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("AK-47", -10000)
-   end,
-})
-
--- Rayfield button
-SPAWNGUNTab:CreateButton({
-    Name = "ALL CITY BANDAGES [369]",
-    Callback = function()
-        local args = {
-    [1] = "BANDAGES",
-    [2] = -1000000
-}
-
-game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("BANDAGES", -10000)
-   end,
-})
-
 local Button = MAINTab:CreateButton({
    Name = "DEX EXPLORER [1KMI$TRAL]",
    Callback = function()
@@ -340,29 +327,16 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/MassiveHubs/loadstrin
    end
 })
 
--- Rayfield button
-SPAWNGUNTab:CreateButton({
-    Name = "ALL CITY UZI [1KMI$TRAL]",
-    Callback = function()
-        local args = {
-    [1] = "UZI",
-    [2] = -1000000
-}
-
-game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("UZI", -10000)
-   end,
-})
-
-local FANTab = Window:CreateTab("FANTASAMA TUROK", 4483362458) -- Title, Image
-local FANSection = FANTab:CreateSection("FANSTAMA CHEAT")
+local FANTab = Window:CreateTab("1KMISTRAL FANTASMA CHEAT", "Package")
+local FANSection = FANTab:CreateSection("FANTASMA AIMBOT")
 
 local Button = FANTab:CreateButton({
-   Name = "AIMBOT [1KMI$TRAL]",
+   Name = "AIMBOT PC [1KMI$TRAL]",
    Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/usbkillerx/EZhacker/refs/heads/main/EZhack"))()
    end
 })local Button = MAINTab:CreateButton({
-   Name = "AIMBOT [1KMI$TRAL]",
+   Name = "AIMBOT PC [1KMI$TRAL]",
    Callback = function()
 local Aimbot = loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V3/main/src/Aimbot.lua"))()
 Aimbot.Load()
