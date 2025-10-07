@@ -1,12 +1,13 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "1KMI$TRAL MAIN CHEAT ",
-   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "ROI LOADER...",
-   LoadingSubtitle = "1KMI$TRAL MAIN CHEAT",
-   ShowText = "1KMI$TRAL", -- for mobile users to unhide rayfield, change if you'd like
-   Theme = {
+Name = "1KMISTRAL MAIN CHEAT",
+Icon = nil,
+LoadingTitle = "1KMISTRAL MAIN CHEAT...",
+LoadingSubtitle = "LOADER ROI...",
+ShowText = "1K UI",
+
+Theme = {
 TextColor = Color3.fromRGB(235, 235, 235),
 
 Background = Color3.fromRGB(15, 15, 18),  
@@ -49,10 +50,10 @@ Background = Color3.fromRGB(15, 15, 18),
 
 },
 
-   ToggleUIKeybind = "K", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
-
-   DisableRayfieldPrompts = true,
-   DisableBuildWarnings = true, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+ToggleUIKeybind = "K",
+DisableRayfieldPrompts = true,
+DisableBuildWarnings = true,
+      
 
    ConfigurationSaving = {
       Enabled = true,
