@@ -327,7 +327,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/MassiveHubs/loadstrin
    end
 })
 
-local FANTab = Window:CreateTab("1KMISTRAL FANTASMA CHEAT", "Package")
+local FANTab = Window:CreateTab("1KMISTRAL FANTASMA CHEAT", "settings")
 local FANSection = FANTab:CreateSection("FANTASMA AIMBOT")
 
 local Button = FANTab:CreateButton({
