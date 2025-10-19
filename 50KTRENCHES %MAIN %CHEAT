@@ -1,11 +1,11 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-Name = "1KMISTRAL MAIN CHEAT",
+Name = "50KTRENCHES MAIN CHEAT",
 Icon = nil,
-LoadingTitle = "1KMISTRAL MAIN CHEAT...",
-LoadingSubtitle = "LOADER ACE...",
-ShowText = "1KMISTRAL UI",
+LoadingTitle = "50KTRENCHES MAIN CHEAT...",
+LoadingSubtitle = "LOADER SNOOPY...",
+ShowText = "50KTRENCHES UI",
 
 Theme = {
 TextColor = Color3.fromRGB(235, 235, 235),
@@ -81,35 +81,35 @@ local MAINTab = Window:CreateTab("MAIN SCRIPT", "Rewind")
 local MAINSection = MAINTab:CreateSection("SYNDICATE")
 
 Rayfield:Notify({
-Title = "ROI",
+Title = "SNOOPY",
 Content = "INVITE DISCORD LINK https://discord.gg/vNm3fwxpX",
 Duration = 2.5,
 Image = nil,
 })
 
 local Button = MAINTab:CreateButton({
-Name = "INFINITE YIELD [1KMISTRAL]",
+Name = "INFINITE YIELD [50K]",
 Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end
 })
 
 local Button = MAINTab:CreateButton({
-Name = "MUSIC EXPO [1KMISTRAL]",
+Name = "MUSIC EXPO [50K]",
 Callback = function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-Ac6-Music-Vulnerability-25536"))()
 end,
 })
 
 local Button = MAINTab:CreateButton({
-Name = "BIG HEAD [1KMISTRAL]",
+Name = "BIG HEAD [50K]",
 Callback = function()
 _G.HeadSize = 4 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.Head.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize) v.Character.Head.Transparency = 0.4 v.Character.Head.BrickColor = BrickColor.new("Red") v.Character.Head.Material = "Neon" v.Character.Head.CanCollide = false v.Character.Head.Massless = true end) end end end end)
 end,
 })
 
 local Button = MAINTab:CreateButton({
-Name = "FADED MENU [1KMISTRAL]",
+Name = "FADED MENU [50K]",
 Callback = function()
 _G.Toggles = "Y" -- You can put any keybind
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded-Grid/main/YesEpic", true))()
@@ -117,35 +117,35 @@ end,
 })
 
 local Button = MAINTab:CreateButton({
-Name = "BRING PARTS [1KMISTRAL]",
+Name = "BRING PARTS [50K]",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/BringFlingPlayers"))("More Scripts: t.me/arceusxscripts")
 end,
 })
 
 local Button = MAINTab:CreateButton({
-Name = "TOUCH FLING [1KMISTRAL]",
+Name = "TOUCH FLING [50K]",
 Callback = function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Touch-Fling-46156"))()
 end,
 })
 
 local Button = MAINTab:CreateButton({
-Name = "HITBOX EXPANDER [1KMISTRAL]",
+Name = "HITBOX EXPANDER [50K]",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ezsee/Hitbox-Expander123/refs/heads/main/waaaaaat"))()
 end,
 })
 
 local Button = MAINTab:CreateButton({
-Name = "FLING ALL [1KMISTRAL]",
+Name = "FLING ALL [50K]",
 Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
 end,
 })
 
 local Button = MAINTab:CreateButton({
-    Name = "ESP [1KMISTRAL]",
+    Name = "ESP [50K]",
     Callback = function()
       -- ====== SERVICES ======
 local Players = game:GetService("Players")
@@ -219,104 +219,70 @@ end)
 })
 
 local Button = MAINTab:CreateButton({
-Name = "WICKED [SYNDICATE]",
+Name = "WICKED [50K]",
 Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/GY1wfJRZ"))()
 end,
 })
 
-local SPAWNGUNTab = Window:CreateTab("1KMISTRAL DUPE CHEAT", "Package")
+local SPAWNGUNTab = Window:CreateTab("50K DUPE CHEAT", "Package")
 local SPAWNGUNSection = SPAWNGUNTab:CreateSection("SPAWN GUN")
 
--- Rayfield button
-SPAWNGUNTab:CreateButton({
-Name = "GUN SHOP [1KMISTRAL]",
+local Button = SPAWNGUNTab:CreateButton({
+Name = "GUN SHOP [50K]",
 Callback = function()
--- Gumawa ng Frame (rectangle container)
-local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "GunSpawnerUI"
-ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
-
-local Frame = Instance.new("Frame")
-Frame.Size = UDim2.new(0, 250, 0, 180)
-Frame.Position = UDim2.new(0.5, -125, 0.5, -90) -- nasa gitna
-Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Frame.BorderSizePixel = 0
-Frame.Active = true
-Frame.Draggable = true
-Frame.Parent = ScreenGui
-
--- UI Corner (rounded rectangle)
-local UICorner = Instance.new("UICorner")
-UICorner.CornerRadius = UDim.new(0, 8)
-UICorner.Parent = Frame
-
--- UI Stroke (outline)
-local UIStroke = Instance.new("UIStroke")
-UIStroke.Thickness = 2
-UIStroke.Color = Color3.fromRGB(50, 138, 220)
-UIStroke.Parent = Frame
-
--- Title
-local Title = Instance.new("TextLabel")
-Title.Size = UDim2.new(1, 0, 0, 30)
-Title.BackgroundTransparency = 1
-Title.Text = "GUN SHOP [1KMISTRAL]"
-Title.Font = Enum.Font.GothamBold
-Title.TextSize = 18
-Title.TextColor3 = Color3.fromRGB(240,240,240)
-Title.Parent = Frame
-
--- Input: Gun Name
-local GunInput = Instance.new("TextBox")
-GunInput.Size = UDim2.new(1, -20, 0, 30)
-GunInput.Position = UDim2.new(0, 10, 0, 40)
-GunInput.PlaceholderText = "Enter Gun Name"
-GunInput.Text = ""
-GunInput.TextColor3 = Color3.fromRGB(240,240,240)
-GunInput.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-GunInput.Parent = Frame
-
--- Input: Amount
-local AmountInput = Instance.new("TextBox")
-AmountInput.Size = UDim2.new(1, -20, 0, 30)
-AmountInput.Position = UDim2.new(0, 10, 0, 80)
-AmountInput.PlaceholderText = "Enter Amount"
-AmountInput.Text = ""
-AmountInput.TextColor3 = Color3.fromRGB(240,240,240)
-AmountInput.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-AmountInput.Parent = Frame
-
--- Button: Spawn Gun
-local SpawnButton = Instance.new("TextButton")
-SpawnButton.Size = UDim2.new(1, -20, 0, 35)
-SpawnButton.Position = UDim2.new(0, 10, 0, 130)
-SpawnButton.Text = "Spawn Gun"
-SpawnButton.Font = Enum.Font.GothamBold
-SpawnButton.TextSize = 16
-SpawnButton.TextColor3 = Color3.fromRGB(255,255,255)
-SpawnButton.BackgroundColor3 = Color3.fromRGB(50, 138, 220)
-SpawnButton.Parent = Frame
-
--- Spawn Function
-SpawnButton.MouseButton1Click:Connect(function()
-    local gunName = GunInput.Text
-    local amount = tonumber(AmountInput.Text) or 0
-    if gunName ~= "" and amount ~= 0 then
-        local ReplicatedStorage = game:GetService("ReplicatedStorage")
-        local GunShop = ReplicatedStorage:FindFirstChild("GunShop")
-        if GunShop and GunShop:FindFirstChild("Events") and GunShop.Events:FindFirstChild("Purchase") then
-            GunShop.Events.Purchase:FireServer(gunName, amount)
-        end
-    end
-end)
+      loadstring(game:HttpGet("https://pastebin.com/raw/gVBQdpb8"))()
    end,
 })
+
+local Button = SPAWNGUNTab:CreateButton({
+Name = "BM STORAGE [50K]",
+Callback = function()
+      loadstring(game:HttpGet("https://pastebin.com/raw/Yat5Xq4E"))()
+end,
+})
+
+local Button = SPAWNGUNTab:CreateButton({
+Name = "KALYE ONSE [50K]",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/A8nN0x18"))()
+end,
+})
+
+local Button = SPAWNGUNTab:CreateButton({
+Name = "AUTO JOB BOX [50K]",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/kw2Y1YfC"))()
+end,
+})
+
+
+local Button = MAINTab:CreateButton({
+Name = "PARAISO [50K]",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/HXqG9Gaq"))()
+end,
+})
+
+local Button = MAINTab:CreateButton({
+Name = "PURCHASE WAEPON [50K]",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/uRF2d6Z4"))()
+end,
+})
+
+local Button = MAINTab:CreateButton({
+Name = "NEXOPOLIS [50K]",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/cAhifpbE"))()
+end,
+})
+
 
 -- FPS Booster Button (Rayfield example)
 
 local Button = MAINTab:CreateButton({
-Name = "BOOST FPS [1KMISTRAL]",
+Name = "BOOST FPS [50K]",
 Callback = function()
 _G.Ignore = {}
 _G.Settings = {
@@ -372,14 +338,14 @@ end
 })
 
 local Button = MAINTab:CreateButton({
-Name = "DEX EXPLORER [1KMISTRAL]",
+Name = "DEX EXPLORER [50K]",
 Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MassiveHubs/loadstring/refs/heads/main/DexXenoAndRezware'))()
 end
 })
 
 local Button = MAINTab:CreateButton({
-Name = "AIMBOT PC [1KMISTRAL]",
+Name = "AIMBOT PC [50K]",
 Callback = function()
 local Aimbot = loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V3/main/src/Aimbot.lua"))()
 Aimbot.Load()
@@ -387,7 +353,7 @@ end
 })
 
 local Button = MAINTab:CreateButton({
-Name = "LOOPBRING ALL [NOT MENU] [1KMISTRAL]",
+Name = "LOOPBRING ALL [NOT MENU] [50K]",
 Callback = function()
 local L1 = true;
 local L2 = game.Players.LocalPlayer.Character.HumanoidRootPart;
@@ -469,17 +435,17 @@ end
 
 
 local Button = MAINTab:CreateButton({
-Name = "REMOTE SPY [1KMISTRAL]",
+Name = "REMOTE SPY [50K]",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
 end
 })
 
-local ACETab = Window:CreateTab("1KMISTRAL EXECUTOR", "Settings")
+local ACETab = Window:CreateTab("50K EXECUTOR", "Settings")
 local ACESection = ACETab:CreateSection("1KMISTRAL EXECUTE")
 
 local Button =  ACETab:CreateButton({
-Name = "1KMISTRAL EXECUTOR[1KMISTRAL]",
+Name = "50KTRENCHESE EXECUTOR [50K]",
 Callback = function()
 
 end
