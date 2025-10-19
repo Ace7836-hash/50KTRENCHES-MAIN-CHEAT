@@ -257,7 +257,7 @@ end,
 })
 
 
-local Button = MAINTab:CreateButton({
+local Button = SPAWNGUNTab:CreateButton({
 Name = "PARAISO [50K]",
 Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/HXqG9Gaq"))()
