@@ -264,14 +264,14 @@ loadstring(game:HttpGet("https://pastebin.com/raw/HXqG9Gaq"))()
 end,
 })
 
-local Button = MAINTab:CreateButton({
+local Button = SPAWNGUNTab:CreateButton({
 Name = "PURCHASE WAEPON [50K]",
 Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/uRF2d6Z4"))()
 end,
 })
 
-local Button = MAINTab:CreateButton({
+local Button = SPAWNGUNTab:CreateButton({
 Name = "NEXOPOLIS [50K]",
 Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/cAhifpbE"))()
