@@ -18,14 +18,14 @@ Background = Color3.fromRGB(0, 0, 0),
   NotificationActionsBackground = Color3.fromRGB(35, 35, 40),  
 
 
-TabBackground = Color3.fromRGB(15, 15, 15),              
-  TabStroke = Color3.fromRGB(50, 50, 60),  
-  TabBackgroundSelected = Color3.fromRGB(60, 60, 60),  
+TabBackground = Color3.fromRGB(65, 65, 65),              
+  TabStroke = Color3.fromRGB(65, 65, 65),  
+  TabBackgroundSelected = Color3.fromRGB(65, 65, 65),  
   TabTextColor = Color3.fromRGB(200, 200, 200),  
   SelectedTabTextColor = Color3.fromRGB(255, 255, 255),  
 
   ElementBackground = Color3.fromRGB(25, 25, 30),  
-  ElementBackgroundHover = Color3.fromRGB(35, 35, 45),  
+ElementBackgroundHover = Color3.fromRGB(35, 35, 45),
   SecondaryElementBackground = Color3.fromRGB(20, 20, 25),  
   ElementStroke = Color3.fromRGB(40, 40, 50),  
   SecondaryElementStroke = Color3.fromRGB(30, 30, 35),  
@@ -79,7 +79,7 @@ Key = "1KMI$TRAL-MAINCHEAT"
 }
 })
 local MAINTab = Window:CreateTab("MAIN SCRIPT", "Rewind")
-local MAINSection = MAINTab:CreateSection("SYNDICATE")
+local MAINSection = MAINTab:CreateSection("50K FEATURES")
 
 Rayfield:Notify({
 Title = "SNOOPY",
@@ -99,7 +99,7 @@ local Button = MAINTab:CreateButton({
 Name = "MUSIC EXPO [50K]",
 Callback = function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-Ac6-Music-Vulnerability-25536"))()
-end
+end,
 })
 
 local Button = MAINTab:CreateButton({
@@ -244,19 +244,18 @@ end,
 })
 
 local Button = SPAWNGUNTab:CreateButton({
+Name = "NEXOPOLIS [50K]",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/cAhifpbE"))()
+end,
+})
+
+local Button = SPAWNGUNTab:CreateButton({
 Name = "KALYE ONSE [50K]",
 Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/A8nN0x18"))()
 end,
 })
-
-local Button = SPAWNGUNTab:CreateButton({
-Name = "AUTO JOB BOX [50K]",
-Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/kw2Y1YfC"))()
-end,
-})
-
 
 local Button = SPAWNGUNTab:CreateButton({
 Name = "PARAISO [50K]",
@@ -266,19 +265,18 @@ end,
 })
 
 local Button = SPAWNGUNTab:CreateButton({
-Name = "PURCHASE WAEPON [50K]",
+Name = "PURCHASE WEAPON [50K]",
 Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/uRF2d6Z4"))()
 end,
 })
 
 local Button = SPAWNGUNTab:CreateButton({
-Name = "NEXOPOLIS [50K]",
+Name = "AUTO JOB BOX [50K]",
 Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/cAhifpbE"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/kw2Y1YfC"))()
 end,
 })
-
 
 -- FPS Booster Button (Rayfield example)
 
