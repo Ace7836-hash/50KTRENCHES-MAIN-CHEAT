@@ -10,14 +10,14 @@ ShowText = "50KTRENCHES UI",
 Theme = {
 TextColor = Color3.fromRGB(235, 235, 235),
 
-Background = Color3.fromRGB(0, 0, 0),  
+Background = Color3.fromRGB(15, 15, 15),  
   Topbar = Color3.fromRGB(20, 20, 25),  
   Shadow = Color3.fromRGB(8, 8, 10),  
 
   NotificationBackground = Color3.fromRGB(25, 25, 30),  
   NotificationActionsBackground = Color3.fromRGB(35, 35, 40),  
 
-  TabBackground = Color3.fromRGB(28, 28, 32),  
+  TabBackground = Color3.fromRGB(65, 65, 65),  
   TabStroke = Color3.fromRGB(50, 50, 60),  
   TabBackgroundSelected = Color3.fromRGB(60, 60, 60),  
   TabTextColor = Color3.fromRGB(200, 200, 200),  
