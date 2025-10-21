@@ -99,7 +99,7 @@ local Button = MAINTab:CreateButton({
 Name = "MUSIC EXPO [50K]",
 Callback = function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-Ac6-Music-Vulnerability-25536"))()
-end,
+end
 })
 
 local Button = MAINTab:CreateButton({
