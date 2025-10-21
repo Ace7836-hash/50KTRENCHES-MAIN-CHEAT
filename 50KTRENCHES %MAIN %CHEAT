@@ -10,7 +10,7 @@ ShowText = "50KTRENCHES UI",
 Theme = {
 TextColor = Color3.fromRGB(235, 235, 235),
 
-Background = Color3.fromRGB(15, 15, 18),  
+Background = Color3.fromRGB(0, 0, 0),  
   Topbar = Color3.fromRGB(20, 20, 25),  
   Shadow = Color3.fromRGB(8, 8, 10),  
 
